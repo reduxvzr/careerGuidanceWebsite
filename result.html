@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты Теста</title>
+    <link rel="stylesheet" href="styles/result.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./code/result.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Результаты Теста на Профориентацию</h1>
+    </header>
+    <main><div class="background-overlay">
+        <h2 id="profession"></h2> 
+        
+        <h3>Описание профессий:</h3> 
+        <div id="career-descriptions">
+            <details id="mechanic-detail" class="career-detail">
+              <summary class="career-summary">Механик</summary>
+              <p class="career-description">
+                Механики занимаются ремонтом, обслуживанием и модернизацией различных машин и механизмов. Они должны хорошо разбираться в конструкции механизмов, уметь работать с инструментами и иметь навыки диагностики неисправностей.
+              </p>
+            </details>
+          
+            <details id="electrician-detail" class="career-detail">
+              <summary class="career-summary">Электрик</summary>
+              <p class="career-description">
+                Электрики устанавливают, ремонтируют и обслуживают электрические системы, оборудование и проводку в зданиях и на производственных площадках. Они должны хорошо знать электротехнику, безопасность при работе с электричеством и уметь читать схемы.
+              </p>
+            </details>
+          
+            <details id="surveyor-detail" class="career-detail">
+              <summary class="career-summary">Землемер</summary>
+              <p class="career-description">
+                Землемеры проводят измерения и съемки участков земли для создания карт, планов и других документов. Они должны хорошо знать геодезию, топографию и иметь навыки работы с измерительными приборами и специальным программным обеспечением.
+              </p>
+            </details>
+          
+            <details id="automechanic-detail" class="career-detail">
+              <summary class="career-summary">Автомеханик</summary>
+              <p class="career-description">
+                Автомеханики занимаются ремонтом и обслуживанием автомобилей. Они должны хорошо знать конструкцию и принцип работы различных систем автомобиля, уметь работать с инструментами и иметь навыки диагностики неисправностей.
+              </p>
+            </details>
+          
+            <details id="agronomist-detail" class="career-detail">
+              <summary class="career-summary">Агроном</summary>
+              <p class="career-description">
+                Агрономы занимаются выращиванием и уходом за сельскохозяйственными культурами. Они должны хорошо знать агрономию, ботанику, почвоведение и иметь навыки работы с сельскохозяйственной техникой.
+              </p>
+            </details>
+          
+            <details id="programmer-detail" class="career-detail">
+              <summary class="career-summary">Программист</summary>
+              <p class="career-description">
+                Программисты разрабатывают, модифицируют и поддерживают программное обеспечение. Они должны хорошо знать алгоритмы, структуры данных и один или несколько языков программирования.
+              </p>
+            </details>
+          
+            <details id="lawyer-detail" class="career-detail">
+              <summary class="career-summary">Юрист</summary>
+              <p class="career-description">
+                Юристы предоставляют консультации по вопросам права, представляют интересы клиентов в суде и ведут делопроизводство. Они должны хорошо знать законодательство, уметь анализировать юридические документы и владеть навыками устного и письменного выражения.
+              </p>
+            </details>
+          
+            <details id="bookkeeper-detail" class="career-detail">
+              <summary class="career-summary">Бухгалтер</summary>
+              <p class="career-description">
+                Бухгалтеры ведут учет финансовых операций организации, составляют отчетность и контролируют соблюдение финансовой дисциплины. Они должны хорошо знать бухгалтерский учет, налоговое законодательство и иметь навыки работы с
+              </p>
+            </details>
+          
+            <details id="gasman-detail" class="career-detail">
+              <summary class="career-summary">Газовщик</summary>
+              <p class="career-description">
+                Газовщики занимаются установкой, обслуживанием и ремонтом газового оборудования. Они должны хорошо знать конструкцию и принцип работы газового оборудования, уметь работать с инструментами и соблюдать правила безопасности при работе с газом.
+              </p>
+            </details>
+            <canvas id="chart"></canvas>
+          </div>
+          
+    </div></main>
+    <footer>
+        <p>© 2024 Профориентационный Тест</p>
+    </footer>
+</body>
+</html>

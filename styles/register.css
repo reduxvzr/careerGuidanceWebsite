@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    font-size: medium;
+    
+}
+
+header {
+  background-color: #ffca28;
+  color: #fff;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+main {  
+    padding: 2rem;
+    padding-bottom: 5rem; /* высота футера + отступ снизу */
+    font-size: larger;
+}
+form {
+  font-size: larger;
+  font-weight: bold;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.815); /* Увеличьте прозрачность, чтобы сделать изображение более бледным */
+    z-index: -1;
+}
+
+
+button {
+    background-color: #66bb6a;
+    color: #fff;
+    border: none;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    button[type="submit"] {
+    display: none; }
+}
+
+button:hover {
+    background-color: #81c784;
+}
+
+form {
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content:left;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.815);
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  p {
+    height: 15%;
+    text-align: center;
+  }
+  
+  footer {
+    position: fixed;
+    height:fit-content;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffca28;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+
+
+
+
+  

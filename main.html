@@ -1,0 +1,321 @@
+<!-- career-test -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профориентационный Тест</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Пройдите Тест</h1>
+    </header>
+    <main>
+        <form id="career-test">
+            <div id="quiz">
+                <div class="question" data-professions="electrician">
+                    <p>1. Мне интересна природа электричества</p>
+                    <label>
+                        <input type="radio" name="electrician" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="electrician,gasman" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/electric.jpg" alt="electric" class="animate">
+                </div>
+                <div class="question" data-professions="mechanic">
+                    <p>2. Я люблю разбирать и собирать различные механизмы и устройства</p>
+                    <label>
+                        <input type="radio" name="mechanic" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="mechanic" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/mechanic.png" alt="mechanic" class="animate">
+                </div>
+                <div class="question" data-professions="surveyor">
+                    <p>3. Я люблю проводить время на природе и мне интересна география.</p>
+                    <label>
+                        <input type="radio" name="surveyor" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="surveyor" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/globus.png" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="gasman">
+                    <p>4. Меня привлекает идея обеспечения безопасности газоснабжения в домах и зданиях.</p>
+                    <label>
+                        <input type="radio" name="gasman" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gasman" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/neznaika.png" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="lawyer,bookkeeper">
+                    <p>5. Я готов помогать людям при возникновении конфликтов</p>
+                    <label>
+                        <input type="radio" name="lawyer,bookkeeper" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="lawyer,bookkeeper" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/neznaika2.png" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="agronomist">
+                    <p>6. Меня привлекает работа на открытом воздухе и обработка почвы.</p>
+                    <label>
+                        <input type="radio" name="agronomist" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="agronomist" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/stebel.png" alt="stebel" class="animate">
+                </div>
+                <div class="question" data-professions="programmer,bookkeeper,surveyor">
+                    <p>7. Меня привлекает работа с цифрами, нравится математика.</p>
+                    <label>
+                        <input type="radio" name="programmer,bookkeeper,surveyor" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="programmer,bookkeeper,surveyor" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/math1.jpg" alt="math1" class="animate">
+                </div>
+                <div class="question" data-professions="agronomist">
+                    <p>8. Мне интересен окружающий нас мир</p>
+                    <label>
+                        <input type="radio" name="agronomist" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="agronomist" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/nature.jpg" alt="nature" class="animate">
+                </div>
+                <div class="question" data-professions="gasman,programmer,electrician">
+                    <p>9. Я могу долго что-то изучать и не терять интерес.</p>
+                    <label>
+                        <input type="radio" name="gasman,programmer,electrician" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gasman,programmer,electrician" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/neznaika3.png" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="automechanic,mechanic">
+                    <p>10. Мне будет интересно изучать механику движения транспортных средств.</p>
+                    <label>
+                        <input type="radio" name="automechanic,mechanic" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="automechanic,mechanic" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/idea.png" alt="idea" class="animate">
+                </div>
+                <div class="question" data-professions="mechanic">
+                    <p>11. Мне интересны тракторы, как они устроены.</p>
+                    <label>
+                        <input type="radio" name="mechanic" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="mechanic" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/tractor.jpg" alt="tractor" class="animate"> 
+                </div>
+                <div class="question" data-professions="programmer,bookkeeper">
+                    <p>12. Мне нравится копаться и разбираться в компьютере.</p>
+                    <label>
+                        <input type="radio" name="programmer,bookkeeper" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="programmer" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/computer.jpg" alt="computer" class="animate">
+                </div>
+                <div class="question" data-professions="mechanic,gasman,automechanic,agronomist">
+                    <p>13. Мне нравится разбираться в том, как работают различные машины и оборудование.</p>
+                    <label>
+                        <input type="radio" name="mechanic,gasman,automechanic,agronomist" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="mechanic,gasman,automechanic,agronomist" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/neznaika4.jpg" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="bookkeeper,automechanic,surveyor,programmer,lawyer">
+                    <p>14. Мне нравится решать задачи и задумываться над логическими загадками.</p>
+                    <label>
+                        <input type="radio" name="bookkeeper,automechanic,surveyor,programmer,lawyer" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="bookkeeper,automechanic,surveyor,programmer,lawyefr" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/neznaika5.jpg" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="bookkeeper,surveyor">
+                    <p>15. Мне нравится считать, решать различные примеры.</p>
+                    <label>
+                        <input type="radio" name="bookkeeper,surveyor" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="bookkeeper,surveyor" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/znaika.jpg" alt="math" class="animate">
+                </div>
+                <div class="question" data-professions="agronomist">
+                    <p>16. Мне нравится ухаживать за растениями.</p>
+                    <label>
+                        <input type="radio" name="agronomist" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="agronomist" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/neznaika6.jpg" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="automechanic">
+                    <p>17. Мне нравятся автомобили, нравится разбираться в них.</p>
+                    <label>
+                        <input type="radio" name="automechanic" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="automechanic" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/car.png" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="electrician">
+                    <p>18. Я бы хотел разобраться в том, что из себя представляет электричество.</p>
+                    <label>
+                        <input type="radio" name="electrician" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="electrician" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/electric2.jpg" alt="electro" class="animate">
+                </div>
+                <div class="question" data-professions="lawyer">
+                    <p>19. Я хочу узнать свои права</p>
+                    <label>
+                        <input type="radio" name="lawyer" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="lawyer" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/book.png" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="lawyer">
+                    <p>20. Я люблю общаться с людьми и разрешать их конфликты.</p>
+                    <label>
+                        <input type="radio" name="lawyer" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="lawyer" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/speek.png" alt="Незнайка" class="animate">
+                </div>
+                <div class="question" data-professions="programmer">
+                    <p>21. Я люблю проводить время за компьютером и изучать новые технологии.</p>
+                    <label>
+                        <input type="radio" name="programmer" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="programmer" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="images/comp2.png" alt="comp2" class="animate">
+                </div>
+                <div class="question" data-professions="automechanic,gasman,mechanic,electrician">
+                    <p>22. Я люблю работать с инструментами и ремонтировать различные устройства</p>
+                    <label>
+                        <input type="radio" name="automechanic,gasman,mechanic,electrician" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="automechanic,gasman,mechanic,electrician" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/masterOther.jpg" alt="master" class="animate">
+                </div>
+                <div class="question" data-professions="electrician">
+                    <p>23. Я могу долго заниматься одним делом </p>
+                    <label>
+                        <input type="radio" name="electrician" value="yes">
+                        <span class="radio-button">ДА</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="electrician" value="no">
+                        <span class="radio-button">НЕТ</span>
+                    </label>
+                    <button type="button" class="next">Далее</button>
+                    <img src="./images/neznaika10.png" alt="Незнайка" class="animate">
+                </div>
+                <button type="submit">Узнать результат</button>
+            </div>
+        </form>
+    </main> 
+    <script src="./code/code.js"></script>
+</body>
+</html>

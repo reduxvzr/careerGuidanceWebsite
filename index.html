@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+    <link rel="stylesheet" href="styles/register.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Регистрация</h1>
+    </header>
+    <main>
+        <form action="php/create.php" id="registration-form" method="POST">
+            <label for="last-name">Фамилия:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label for="first-name">Имя:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="middle-name">Отчество:</label>
+            <input type="text" id="middle-name" name="middle-name" required>
+            <label for="birth-date">Дата рождения:</label>
+            <input type="text" id="birth-date" name="birth-date" required>
+            <button type="submit">Зарегистрироваться</button>
+
+            <p>Тебе предстоит пройти увлекательный тест по определению твоей будущей профессии!</p>
+            <p>При возникновении вопросов зови взрослых, которые тебе всегда подскажут!</p>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Профориентационный Тест, <a href="https://bak93.ru">bak93.ru</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/l10n/ru.js"></script>
+    <script src="./code/register.js"></script>
+</body>
+</html>

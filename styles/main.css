@@ -1,0 +1,215 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: larger;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    font-size: larger;
+}
+
+header {
+  background-color: #ffca28;
+  color: #fff;
+  height:min-content;
+  padding: 1px;
+  text-align: center;
+  font-size: medium
+}
+
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.815); /* Увеличьте прозрачность, чтобы сделать изображение более бледным */
+  z-index: -1;
+}
+
+button {
+    background-color: #66bb6a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    button[type="submit"] {
+    display: none; }
+}
+
+button[type="submit"] {
+    display: none;
+    padding: 30% 20%;
+}
+
+button:hover {
+    background-color: #81c784;
+}
+
+button.next {
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 90%;
+    margin-bottom: 10%;
+    background-color:#ffca28;
+    font-weight: bold;
+    /* margin: 2rem auto 0;*/
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 5px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+  
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .radio-button {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 5px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    background-color: #ccc; 
+    flex-grow: 1;
+  }
+  
+  .radio-button:before,
+  .radio-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .radio-button:before {
+    background-color: #ff6347;
+    z-index: -1;
+  }
+  
+  .radio-button:after {
+    background-color: #66bb6a;
+    transform: scale(0);
+  }
+  
+  input[type="radio"]:checked + .radio-button:after {
+    transform: scale(1);
+    z-index: -1;
+    background-color: #66bb6a;
+  }
+  
+  input[type="radio"]:checked + .radio-button:before {
+    transform: scale(0);
+  }
+  
+  .question img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .question {
+  height: 300px; /* или другое значение, подходящее под ваш дизайн */
+  position: relative;
+}
+  
+#quiz {
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* задайте фиксированную высоту */
+  width: 600px; /* задайте фиксированную ширину */
+}
+
+
+.question {
+  flex-grow: 1; /* растягивает контент вопроса на всю высоту контейнера */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100px; /* задаем минимальную высоту */
+  margin-bottom: 20px;
+  justify-content: space-between; /* равномерно распределяет контент по вертикали */
+}
+
+.question img {
+  align-self: center; /* центрирует изображение по горизонтали */
+}
+
+button.next {
+  align-self: flex-end; /* выравнивает кнопку по нижнему краю контейнера */
+}
+
+p {
+  height: 15%;
+}
+
+.animate {
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
